@@ -1,15 +1,6 @@
 #include <StarWarsApp.h>
 
 
-StarWarsApp::StarWarsApp(std::string Cli) {
-#ifdef CPPHTTPLIB_OPENSSL_SUPPORT
-	httplib::SSLClient cli(Cli);
-	cli.enable_server_certificate_verification(true);
-#else
-	httplib::Client cli(Cli);
-#endif
-}
-
 void StarWarsApp::setPerson(int person) {
 	this->person = person;
 }
