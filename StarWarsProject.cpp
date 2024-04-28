@@ -1,6 +1,6 @@
 ﻿// StarWarsProject.cpp: определяет точку входа для приложения.
 //
-
+#define CPPHTTPLIB_OPENSSL_SUPPORT
 #include "StarWarsProject.h"
 
 using namespace std;
